@@ -13,24 +13,49 @@
             margin: 0;
             background-color: #f4f4f4;
             font-family: Arial, sans-serif;
+            animation: fadeIn 2s ease-in;
         }
+        
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+        
         h1 {
             color: #35424a;
             font-size: 3em;
             text-align: center;
+            transform: scale(0);
+            animation: scaleUp 1.5s ease-in-out forwards;
         }
+        
+        @keyframes scaleUp {
+            from { transform: scale(0); }
+            to { transform: scale(1); }
+        }
+        
         a {
-  color: red;
-  text-decoration: none;
-  text-transform: uppercase;
-}
+            color: red;
+            text-decoration: none;
+            text-transform: uppercase;
+            display: inline-block;
+            margin: 10px;
+            font-size: 1.5em;
+            transition: transform 0.3s, color 0.3s;
+        }
+        
+        a:hover {
+            transform: translateY(-5px);
+            color: #35424a;
+        }
     </style>
 </head>
 <body>
-    <h1>Handige Links voor het CL</h1>
-   <a href="https://outlook.office.com/mail/" _blank>Oultook Mail</a>
-    <br>
-</br>
-    <a href="https://leerling.somtoday.nl" _blank>Somtoday</a>
+    <div>
+        <h1>Handige Links voor het CL</h1>
+        <a href="https://outlook.office.com/mail/" target="_blank">Outlook Mail</a>
+        <br>
+        <a href="https://leerling.somtoday.nl" target="_blank">Somtoday</a>
+    </div>
 </body>
 </html>
