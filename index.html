@@ -27,6 +27,11 @@
             text-align: center;
             transform: scale(0);
             animation: scaleUp 1.5s ease-in-out forwards;
+            border: 3px solid #35424a;
+            padding: 20px;
+            border-radius: 15px;
+            background-color: #ffffff;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
         }
         
         @keyframes scaleUp {
@@ -41,12 +46,17 @@
             display: inline-block;
             margin: 10px;
             font-size: 1.5em;
-            transition: transform 0.3s, color 0.3s;
+            padding: 10px 20px;
+            border: 2px solid red;
+            border-radius: 10px;
+            transition: transform 0.3s, color 0.3s, background-color 0.3s, box-shadow 0.3s;
         }
         
         a:hover {
             transform: translateY(-5px);
-            color: #35424a;
+            color: #ffffff;
+            background-color: #35424a;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
         }
     </style>
 </head>
